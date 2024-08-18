@@ -25,6 +25,11 @@ export default function SubmitContent() {
     } else {
       setMessage("Failed to submit content.");
     }
+
+    // Hide the message after 3 seconds
+    setTimeout(() => {
+      setMessage("");
+    }, 3000); // 3000 milliseconds = 3 seconds
   };
 
   return (
